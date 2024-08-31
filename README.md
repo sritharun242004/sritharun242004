@@ -75,10 +75,10 @@
     <img src="https://img.icons8.com/fluency/50/flutter.png" alt="Flutter" width="60" height="60"/>
   </a>
   <a href="https://streamlit.io/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" alt="Streamlit" width="60" height="60"/>
+    <img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" alt="Streamlit" width="55" height="55"/>
   </a>
   <a href="https://www.heroku.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://static-00.iconduck.com/assets.00/heroku-icon-2048x2048-4rs1dp6p.png" alt="Heroku" width="60" height="60"/>
+    <img src="https://static-00.iconduck.com/assets.00/heroku-icon-2048x2048-4rs1dp6p.png" alt="Heroku" width="55" height="55"/>
   </a>
   <a href="https://firebase.google.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
     <img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase" width="50" height="50"/>
