@@ -100,7 +100,6 @@
 </div>
 </div>
 <hr/>
-
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sritharun242004&show_icons=true&locale=en&layout=compact" alt="sritharun242004" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sritharun242004&show_icons=true&locale=en" alt="sritharun242004" /></p>
