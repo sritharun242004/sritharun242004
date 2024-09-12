@@ -9,7 +9,7 @@
 
 - 📫 How to reach me **sritharun.242004@gmail.com**
 
-- ⚡ Fun fact ** routine: snooze in the morning, lift weights in the evening, and code into the night. It's a perfect mix of sleep, strength, and syntax! 😴💪💻**
+- ⚡ Fun fact **routine: snooze in the morning, lift weights in the evening, and code into the night. It's a perfect mix of sleep, strength, and syntax! 😴💪💻**
 
 ## 🤝 Connect with me
 </div>
