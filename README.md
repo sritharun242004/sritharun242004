@@ -22,7 +22,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://www.geeksforgeeks.org/user/tharun24/" target="_blank">
-    <img src="https://img.shields.io/badge/GeeksforGeeks-32CD32?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
+    <img src="https://img.shields.io/badge/GeeksforGeeks-006400?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
   </a>
 </div>
 <hr/>
