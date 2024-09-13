@@ -21,7 +21,7 @@
   <a href="https://www.linkedin.com/in/tharunkumarl" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="https://auth.geeksforgeeks.org/user/yourusername/profile" target="_blank">
+  <a href="https://www.geeksforgeeks.org/user/tharun24/" target="_blank">
     <img src="https://img.shields.io/badge/GeeksforGeeks-32CD32?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
   </a>
 </div>
