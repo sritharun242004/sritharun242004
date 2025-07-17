@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Machine Learning ,**
 
-- 💬 Ask me about **ML,DL,Ai**
+- 💬 Ask me about **ML,Ai**
 
 - 📫 How to reach me **sritharun.242004@gmail.com**
 
