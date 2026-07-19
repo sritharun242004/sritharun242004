@@ -13,14 +13,14 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else "snake.gif"
 GREEN = {0:"#ebedf0",1:"#9be9a8",2:"#40c463",3:"#30a14e",4:"#216e39"}
 GREY  = {0:"#ebedf0",1:"#c9ced4",2:"#aab0b8",3:"#848c96",4:"#5b636d"}
 COL2LVL = {"#ebedf0":0,"#9be9a8":1,"#40c463":2,"#30a14e":3,"#216e39":4}
-SNAKE_HEAD = (139, 92, 246)     # purple #8B5CF6
-SNAKE_TAIL = (47, 129, 247)     # blue   #2F81F7
+SNAKE_HEAD = (22, 101, 52)      # dark github green  #166534
+SNAKE_TAIL = (57, 211, 83)      # bright github green #39d353
 
 CELL, GAP = 13, 3
 PITCH = CELL + GAP
-PAD = 12
+PAD = 14
 ROWS = 7
-LMIN, LMAX = 5, 24              # snake length: start -> cap
+LMIN, LMAX = 4, 40              # snake length: start -> cap (grows bigger)
 FPS_MS = 55                     # ms per frame
 
 def hx(h): return tuple(int(h[i:i+2],16) for i in (1,3,5))
@@ -102,8 +102,13 @@ def main():
             t = k/(n-1) if n > 1 else 1.0
             col = lerp(SNAKE_TAIL, SNAKE_HEAD, t)
             x, y = cell_xy(bc, br)
-            infl = 3 if k == n-1 else 2      # head a bit bigger
-            rrect(d, x-infl, y-infl, CELL+2*infl, col, rad=5)
+            is_head = (k == n-1)
+            infl = 4 if is_head else 3       # thicker body, bigger head
+            rrect(d, x-infl, y-infl, CELL+2*infl, col, rad=6)
+            if is_head:                      # white eye so the head reads clearly
+                cx, cy = x + CELL//2, y + CELL//2
+                d.ellipse([cx-3, cy-3, cx+3, cy+3], fill=(255, 255, 255))
+                d.ellipse([cx-1, cy-1, cx+2, cy+2], fill=(20, 40, 25))
         frames.append(img.convert("P", palette=Image.ADAPTIVE, colors=64))
 
     # small end pause
