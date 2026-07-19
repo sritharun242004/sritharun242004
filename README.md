@@ -119,7 +119,7 @@
 <h2 align="center">🐍 Contribution Snake</h2>
 
 <div align="center">
-  <img alt="github-snake" src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/main/assets/snake.gif?v=2" width="880" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/main/assets/snake.gif?v=3" width="880" />
 </div>
 
 <hr/>
@@ -132,5 +132,5 @@
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=sritharun242004&label=Profile%20Views&color=2F81F7&style=flat" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=sritharun242004&base=3389&label=Profile%20Views&color=2F81F7&style=flat" alt="profile views" />
 </div>
