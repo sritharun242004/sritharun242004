@@ -1,112 +1,142 @@
-<h1 align="center">Hi 👋, I'm  Tharun Kumar</h1>
-<h3 align="center">A Data Scientist | AI&ML </h3>
+<!-- ===================== HEADER ===================== -->
+<h1 align="center">Hi 👋, I'm Tharun Kumar</h1>
 
-<image align="right" alt="coding" width="400" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
-
-- 🌱 I’m currently learning **Machine Learning ,**
-
-- 💬 Ask me about **ML,Ai**
-
-- 📫 How to reach me **sritharun.242004@gmail.com**
-
-- ⚡ Fun fact **Snooze in the morning, lift weights in the evening, and code into the night. It's a perfect mix of sleep, strength, and syntax! 😴💪💻**
-
-## 🤝 Connect with me
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2F81F7&center=true&vCenter=true&width=650&lines=Data+Scientist+%7C+AI+%26+ML+Enthusiast;Full-Stack+%2B+Mobile+App+Developer;NLP+%26+LLM+Practitioner;Automation+%26+Workflow+Builder" alt="Typing SVG" />
 </div>
- 
-<div align="center"> 
+
+<br/>
+
+<img align="right" alt="coding" width="380" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
+
+### 👨‍💻 About Me
+
+- 🔭 I build **full-stack web apps, mobile apps & e-commerce stores** end-to-end
+- 🧠 I work on **Data Analysis, NLP, prediction models, Machine Learning & LLMs**
+- 🤖 I automate workflows with **Selenium, Playwright, n8n & Zapier**
+- 🌱 Currently going deeper into **LLMs & Applied Machine Learning**
+- 💬 Ask me about **AI/ML, Automation, or building products fast**
+- 📫 Reach me at **sritharun.242004@gmail.com**
+- ⚡ Fun fact: *Snooze in the morning, lift in the evening, code into the night — sleep, strength & syntax!* 😴💪💻
+
+<br clear="right"/>
+
+<!-- ===================== SOCIALS ===================== -->
+## 🤝 Connect with me
+
+<div align="left">
   <a href="mailto:sritharun.242004@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://www.linkedin.com/in/tk2004/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://www.geeksforgeeks.org/user/tharun24/" target="_blank">
-    <img src="https://img.shields.io/badge/GeeksforGeeks-006400?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
+    <img src="https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
   </a>
 </div>
+
 <hr/>
- 
-<h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; padding-left: 20px;">
-  <!-- First Row -->
-  <a href="https://www.python.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python" width="60" height="60"/>
-  </a>
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000" alt="MySQL" width="60" height="60"/>
-  </a>
-  <a href="https://numpy.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/numpy.png" alt="NumPy" width="50" height="50"/>
-  </a>
-  <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/pandas.png" alt="Pandas" width="60" height="60"/>
-  </a>
-  <a href="https://matplotlib.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" width="48" height="48"/>
-  </a>
-  <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg" alt="Seaborn" width="50" height="60"/>
-  </a>
-  <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" width="60" height="60"/>
-  </a>
-  <a href="https://www.nltk.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://miro.medium.com/v2/resize:fit:592/1*YM2HXc7f4v02pZBEO8h-qw.png" alt="NLTK" width="60" height="60"/>
-  </a>
-  <a href="https://www.tensorflow.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/tensorflow.png" alt="TensorFlow" width="60" height="60"/>
-  </a>
-  <a href="https://keras.io/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/material-rounded/24/keras.png" alt="Keras" width="60" height="60"/>
-  </a>
-</div>
 
-<!-- Transparent Line -->
-<div style="height: 20px;"></div>
+<!-- ===================== TECH STACK ===================== -->
+<h2 align="center">🛠️ Tech Stack & Skills</h2>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; padding-left: 20px;">
-  <!-- Second Row -->
-  <a href="https://github.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/ios-glyphs/30/github.png" alt="GitHub" width="60" height="60"/>
-  </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/git.png" alt="Git" width="50" height="50"/>
-  </a>
-  <a href="https://flutter.dev/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/fluency/50/flutter.png" alt="Flutter" width="60" height="60"/>
-  </a>
-  <a href="https://streamlit.io/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png" alt="Streamlit" width="55" height="55"/>
-  </a>
-  <a href="https://www.heroku.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://static-00.iconduck.com/assets.00/heroku-icon-2048x2048-4rs1dp6p.png" alt="Heroku" width="55" height="55"/>
-  </a>
-  <a href="https://firebase.google.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase" width="50" height="50"/>
-  </a>
-  <a href="https://visualstudio.microsoft.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/visual-studio--v1.png" alt="Visual Studio" width="50" height="50"/>
-  </a>
-  <a href="https://www.anaconda.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/fluency/50/anaconda--v2.png" alt="Anaconda" width="60" height="60"/>
-  </a>
-  <a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/pycharm--v2.png" alt="PyCharm" width="50" height="50"/>
-  </a>
-  <a href="https://colab.research.google.com/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/color/48/google-colab.png" alt="Google Colab" width="48" height="48"/>
-  </a>
-  <a href="https://jupyter.org/" target="_blank" rel="noreferrer" style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://img.icons8.com/fluency/50/jupyter.png" alt="Jupyter" width="50" height="50"/>
-  </a>
-</div>
-</div>
+<br/>
+
+<table align="center">
+  <tr>
+    <td align="center"><strong>💻 Languages</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=python,ts,js,dart,cpp&perline=10" />
+      <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" height="28" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>🎨 Frontend</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,flutter&perline=10" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>⚙️ Backend & Cloud</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mysql,firebase,aws&perline=10" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>🧠 AI / ML / Data</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv&perline=10" /><br/>
+      <img src="https://img.shields.io/badge/Machine%20Learning-FF6F00?style=flat-square&logo=scikitlearn&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/NLP-22A699?style=flat-square&logo=spacy&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/LLMs-412991?style=flat-square&logo=openai&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/Prediction%20Models-0194E2?style=flat-square&logo=mlflow&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/Data%20Analysis-150458?style=flat-square&logo=pandas&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" height="28" />
+      <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" height="28" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>🤖 Automation</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=selenium&perline=10" />
+      <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/Zapier-FF4A00?style=flat-square&logo=zapier&logoColor=white" height="28" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>🛒 E-Commerce</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/Shopify-7AB55C?style=flat-square&logo=shopify&logoColor=white" height="28" />
+      <img src="https://img.shields.io/badge/WooCommerce-96588A?style=flat-square&logo=woocommerce&logoColor=white" height="28" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>🧰 Tools</strong></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=git,github,vscode,docker,postman,anaconda&perline=10" />
+    </td>
+  </tr>
+</table>
+
 <hr/>
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=sritharun242004&show_icons=true&locale=en&layout=compact" alt="sritharun242004" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sritharun242004&show_icons=true&locale=en" alt="sritharun242004" /></p>
+<!-- ===================== GITHUB STATS ===================== -->
+<h2 align="center">📊 GitHub Stats</h2>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sritharun242004&" alt="sritharun242004" /></p>
+<div align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sritharun242004&show_icons=true&count_private=true&hide_border=true&title_color=2F81F7&icon_color=2F81F7&theme=tokyonight" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=sritharun242004&layout=compact&hide_border=true&title_color=2F81F7&theme=tokyonight" />
+</div>
 
-[![Tharun Kumar's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=sritharun242004&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sritharun242004&hide_border=true&background=1A1B27&stroke=2F81F7&ring=2F81F7&fire=2F81F7&currStreakLabel=2F81F7&theme=tokyonight" alt="streak stats" />
+</div>
+
+<hr/>
+
+<!-- ===================== SNAKE ANIMATION ===================== -->
+<h2 align="center">🐍 Contribution Snake</h2>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sritharun242004/sritharun242004/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sritharun242004/sritharun242004/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/output/github-snake.svg" />
+  </picture>
+</div>
+
+<hr/>
+
+<!-- ===================== ACTIVITY GRAPH ===================== -->
+<div align="center">
+
+[![Tharun Kumar's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=sritharun242004&theme=tokyo-night&hide_border=true&bg_color=1A1B27&color=2F81F7&line=2F81F7&point=FFFFFF)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=sritharun242004&label=Profile%20Views&color=2F81F7&style=flat" alt="profile views" />
+</div>
