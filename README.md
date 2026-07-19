@@ -42,7 +42,7 @@
 <h2 align="center">🛠️ Tech Stack & Skills</h2>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/main/assets/skill-globe.svg" alt="3D Skill Globe" width="480" />
+  <img src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/main/assets/skill-globe.svg" alt="3D Skill Globe" width="560" />
 </div>
 
 <br/>
