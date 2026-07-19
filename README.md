@@ -41,13 +41,17 @@
 <!-- ===================== TECH STACK ===================== -->
 <h2 align="center">🛠️ Tech Stack & Skills</h2>
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/main/assets/tech-orbit.svg" alt="Tech Orbit" width="460" />
+</div>
+
 <br/>
 
 <table align="center">
   <tr>
     <td align="center"><strong>💻 Languages</strong></td>
     <td>
-      <img src="https://skillicons.dev/icons?i=python,ts,js,dart,cpp&perline=10" />
+      <img src="https://skillicons.dev/icons?i=python,ts,js,dart&perline=10" />
       <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" height="28" />
     </td>
   </tr>
@@ -90,7 +94,6 @@
     <td align="center"><strong>🛒 E-Commerce</strong></td>
     <td>
       <img src="https://img.shields.io/badge/Shopify-7AB55C?style=flat-square&logo=shopify&logoColor=white" height="28" />
-      <img src="https://img.shields.io/badge/WooCommerce-96588A?style=flat-square&logo=woocommerce&logoColor=white" height="28" />
     </td>
   </tr>
   <tr>
@@ -107,12 +110,21 @@
 <h2 align="center">📊 GitHub Stats</h2>
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sritharun242004&show_icons=true&count_private=true&hide_border=true&title_color=2F81F7&icon_color=2F81F7&theme=tokyonight" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=sritharun242004&layout=compact&hide_border=true&title_color=2F81F7&theme=tokyonight" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sritharun242004&show_icons=true&count_private=true&hide_border=true&title_color=2F81F7&icon_color=2F81F7&text_color=333333&bg_color=FFFFFF" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=sritharun242004&layout=compact&hide_border=true&title_color=2F81F7&text_color=333333&bg_color=FFFFFF" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sritharun242004&hide_border=true&background=1A1B27&stroke=2F81F7&ring=2F81F7&fire=2F81F7&currStreakLabel=2F81F7&theme=tokyonight" alt="streak stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sritharun242004&hide_border=true&background=FFFFFF&stroke=E1E4E8&ring=2F81F7&fire=FF6B00&currStreakLabel=2F81F7&sideLabels=333333&dates=767676&currStreakNum=333333&sideNums=333333" alt="streak stats" />
+</div>
+
+<hr/>
+
+<!-- ===================== TROPHIES ===================== -->
+<h2 align="center">🏆 Trophies</h2>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=sritharun242004&theme=flat&no-frame=true&no-bg=true&margin-w=8&column=7" alt="trophies" />
 </div>
 
 <hr/>
@@ -121,11 +133,7 @@
 <h2 align="center">🐍 Contribution Snake</h2>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sritharun242004/sritharun242004/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sritharun242004/sritharun242004/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/output/github-snake.svg" />
-  </picture>
+  <img alt="github-snake" src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/output/github-snake.svg" />
 </div>
 
 <hr/>
@@ -133,7 +141,7 @@
 <!-- ===================== ACTIVITY GRAPH ===================== -->
 <div align="center">
 
-[![Tharun Kumar's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=sritharun242004&theme=tokyo-night&hide_border=true&bg_color=1A1B27&color=2F81F7&line=2F81F7&point=FFFFFF)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Tharun Kumar's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=sritharun242004&hide_border=true&bg_color=FFFFFF&color=2F81F7&line=2F81F7&point=1F6FEB&title_color=2F81F7&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
