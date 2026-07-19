@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
-"""High-quality contribution snake GIF:
-- organic pathfinding movement (wanders to the nearest contribution, not a fixed sweep)
-- smooth anti-aliased rounded-tube snake (supersampled)
-- snake GROWS as it eats; eaten green cells turn GREY at the SAME intensity
-Reads contrib.json (GitHub GraphQL). Light theme. Deterministic (seeded)."""
-import json, sys, random
-from collections import deque
+"""Contribution snake GIF (original simple version):
+- serpentine sweep, blocky cells (no smooth tube / eye / pathfinding)
+- snake grows on eat; eaten green cells turn GREY at the same intensity
+- purple -> blue snake. Reads contrib.json (GitHub GraphQL). Light theme."""
+import json, sys
 from PIL import Image, ImageDraw
-
-random.seed(42)
 
 CONTRIB = sys.argv[1] if len(sys.argv) > 1 else "contrib.json"
 OUT = sys.argv[2] if len(sys.argv) > 2 else "snake.gif"
@@ -19,13 +15,12 @@ COL2LVL = {"#ebedf0":0,"#9be9a8":1,"#40c463":2,"#30a14e":3,"#216e39":4}
 SNAKE_HEAD = (139, 92, 246)     # purple #8B5CF6
 SNAKE_TAIL = (47, 129, 247)     # blue   #2F81F7
 
-CELL, GAP, PAD, ROWS = 14, 3, 16, 7
+CELL, GAP = 13, 3
 PITCH = CELL + GAP
-SS = 2                          # supersample factor (anti-alias)
-BODYW = CELL + 3                # snake tube thickness
-LMIN, LMAX = 5, 44
-FPS_MS = 90
-MAX_FRAMES = 135
+PAD = 12
+ROWS = 7
+LMIN, LMAX = 5, 24
+FPS_MS = 55
 
 def hx(h): return tuple(int(h[i:i+2], 16) for i in (1, 3, 5))
 def lerp(a, b, t): return tuple(round(a[i]+(b[i]-a[i])*t) for i in range(3))
@@ -48,60 +43,28 @@ def load_grid():
             have[ci][r] = True
     return grid, have, cols
 
-def neighbors(c, r, cols):
-    for dc, dr in ((1,0),(-1,0),(0,1),(0,-1)):
-        nc, nr = c+dc, r+dr
-        if 0 <= nc < cols and 0 <= nr < ROWS:
-            yield nc, nr
-
-def bfs(start, goal, cols):
-    prev = {start: None}; q = deque([start])
-    while q:
-        cur = q.popleft()
-        if cur == goal:
-            break
-        for nb in neighbors(*cur, cols):
-            if nb not in prev:
-                prev[nb] = cur; q.append(nb)
-    if goal not in prev:
-        return []
-    path, cur = [], goal
-    while cur != start:
-        path.append(cur); cur = prev[cur]
-    return path[::-1]
-
-def build_path(grid, cols):
-    """Greedy: repeatedly wander to the nearest remaining contribution (random
-    tie-break) -> organic, non-repeating movement that still eats everything."""
-    targets = {(c, r) for c in range(cols) for r in range(ROWS) if grid[c][r] > 0}
-    head = (0, 3)
-    path = [head]
-    while targets:
-        hx0, hy0 = head
-        best = min(targets, key=lambda t: abs(t[0]-hx0)+abs(t[1]-hy0) + random.random())
-        seg = bfs(head, best, cols)
-        if not seg:
-            targets.discard(best); continue
-        path.extend(seg)
-        for cell in seg:
-            targets.discard(cell)
-        head = best
+def serpentine(cols):
+    path = []
+    for c in range(cols):
+        rows = range(ROWS) if c % 2 == 0 else range(ROWS-1, -1, -1)
+        for r in rows:
+            path.append((c, r))
     return path
 
-def cell_center(c, r):
-    return (PAD + c*PITCH + CELL/2, PAD + r*PITCH + CELL/2)
+def cell_xy(c, r):
+    return PAD + c*PITCH, PAD + r*PITCH
+
+def rrect(d, x, y, size, color, rad=3):
+    d.rounded_rectangle([x, y, x+size, y+size], radius=rad, fill=color)
 
 def main():
     grid, have, cols = load_grid()
-    path = build_path(grid, cols)
-    # subsample path if too long (keeps a smooth but bounded frame count)
-    stride = max(1, len(path)//MAX_FRAMES)
+    path = serpentine(cols)
     W = PAD*2 + cols*PITCH - GAP
     H = PAD*2 + ROWS*PITCH - GAP
     green = {k: hx(v) for k, v in GREEN.items()}
     grey = {k: hx(v) for k, v in GREY.items()}
 
-    # length at each path index (grows on eat, capped)
     length, L = [], LMIN
     for (c, r) in path:
         if grid[c][r] > 0:
@@ -110,58 +73,36 @@ def main():
 
     eaten = [[False]*ROWS for _ in range(cols)]
     frames = []
-    for i in range(0, len(path), stride):
-        # mark everything eaten up to i
-        for k in range(max(0, i-stride), i+1):
-            c, r = path[k]
-            if grid[c][r] > 0:
-                eaten[c][r] = True
-        big = Image.new("RGB", (W*SS, H*SS), (255, 255, 255))
-        d = ImageDraw.Draw(big)
-        # grid
+    for i in range(len(path)):
+        c, r = path[i]
+        if grid[c][r] > 0:
+            eaten[c][r] = True
+        img = Image.new("RGB", (W, H), (255, 255, 255))
+        d = ImageDraw.Draw(img)
         for cc in range(cols):
             for rr in range(ROWS):
                 if not have[cc][rr]:
                     continue
                 lvl = grid[cc][rr]
                 col = (grey[lvl] if eaten[cc][rr] else green[lvl]) if lvl > 0 else green[0]
-                x = (PAD + cc*PITCH)*SS; y = (PAD + rr*PITCH)*SS
-                d.rounded_rectangle([x, y, x+CELL*SS, y+CELL*SS], radius=3*SS, fill=col)
-        # smooth snake tube
+                x, y = cell_xy(cc, rr)
+                rrect(d, x, y, CELL, col)
         L = length[i]
         body = path[max(0, i-L+1): i+1]
-        pts = [tuple(v*SS for v in cell_center(c, r)) for (c, r) in body]
-        n = len(pts)
-        w = BODYW*SS
-        for k in range(n):
-            col = lerp(SNAKE_TAIL, SNAKE_HEAD, k/(n-1) if n > 1 else 1.0)
-            px, py = pts[k]
-            if k < n-1:
-                d.line([pts[k], pts[k+1]], fill=col, width=w)
-            d.ellipse([px-w/2, py-w/2, px+w/2, py+w/2], fill=col)   # round joints
-        # head + eye
-        if pts:
-            hxp, hyp = pts[-1]
-            hr = w*0.62
-            d.ellipse([hxp-hr, hyp-hr, hxp+hr, hyp+hr], fill=SNAKE_HEAD)
-            dx, dy = (0, 0)
-            if n > 1:
-                dx, dy = pts[-1][0]-pts[-2][0], pts[-1][1]-pts[-2][1]
-                mag = (dx*dx+dy*dy)**0.5 or 1
-                dx, dy = dx/mag, dy/mag
-            ex, ey = hxp + dx*hr*0.4, hyp + dy*hr*0.4
-            er = hr*0.42
-            d.ellipse([ex-er, ey-er, ex+er, ey+er], fill=(255, 255, 255))
-            d.ellipse([ex-er*0.5, ey-er*0.5, ex+er*0.5, ey+er*0.5], fill=(26, 22, 52))
-        small = big.resize((W, H), Image.LANCZOS)
-        frames.append(small.quantize(colors=64, method=Image.MEDIANCUT))
+        n = len(body)
+        for k, (bc, br) in enumerate(body):
+            t = k/(n-1) if n > 1 else 1.0
+            col = lerp(SNAKE_TAIL, SNAKE_HEAD, t)
+            x, y = cell_xy(bc, br)
+            infl = 3 if k == n-1 else 2
+            rrect(d, x-infl, y-infl, CELL+2*infl, col, rad=5)
+        frames.append(img.convert("P", palette=Image.ADAPTIVE, colors=64))
 
-    frames += [frames[-1]] * 14
+    frames += [frames[-1]] * 12
     frames[0].save(OUT, save_all=True, append_images=frames[1:],
                    duration=FPS_MS, loop=0, disposal=2, optimize=True)
     import os
-    print(f"wrote {OUT}  {W}x{H}  path={len(path)} stride={stride} "
-          f"{len(frames)} frames  {os.path.getsize(OUT)//1024} KB")
+    print(f"wrote {OUT}  {W}x{H}  {len(frames)} frames  {os.path.getsize(OUT)//1024} KB")
 
 if __name__ == "__main__":
     main()
