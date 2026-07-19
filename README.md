@@ -110,21 +110,7 @@
 <h2 align="center">📊 GitHub Stats</h2>
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sritharun242004&show_icons=true&count_private=true&hide_border=true&title_color=2F81F7&icon_color=2F81F7&text_color=333333&bg_color=FFFFFF" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=sritharun242004&layout=compact&hide_border=true&title_color=2F81F7&text_color=333333&bg_color=FFFFFF" />
-</div>
-
-<div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=sritharun242004&hide_border=true&background=FFFFFF&stroke=E1E4E8&ring=2F81F7&fire=FF6B00&currStreakLabel=2F81F7&sideLabels=333333&dates=767676&currStreakNum=333333&sideNums=333333" alt="streak stats" />
-</div>
-
-<hr/>
-
-<!-- ===================== TROPHIES ===================== -->
-<h2 align="center">🏆 Trophies</h2>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=sritharun242004&theme=flat&no-frame=true&no-bg=true&margin-w=8&column=7" alt="trophies" />
 </div>
 
 <hr/>
