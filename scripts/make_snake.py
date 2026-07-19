@@ -16,8 +16,8 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else "snake.gif"
 GREEN = {0:"#ebedf0",1:"#9be9a8",2:"#40c463",3:"#30a14e",4:"#216e39"}
 GREY  = {0:"#ebedf0",1:"#c9ced4",2:"#aab0b8",3:"#848c96",4:"#5b636d"}
 COL2LVL = {"#ebedf0":0,"#9be9a8":1,"#40c463":2,"#30a14e":3,"#216e39":4}
-SNAKE_HEAD = (22, 101, 52)      # dark green  #166534
-SNAKE_TAIL = (74, 222, 128)     # bright green #4ade80
+SNAKE_HEAD = (139, 92, 246)     # purple #8B5CF6
+SNAKE_TAIL = (47, 129, 247)     # blue   #2F81F7
 
 CELL, GAP, PAD, ROWS = 14, 3, 16, 7
 PITCH = CELL + GAP
@@ -152,7 +152,7 @@ def main():
             ex, ey = hxp + dx*hr*0.4, hyp + dy*hr*0.4
             er = hr*0.42
             d.ellipse([ex-er, ey-er, ex+er, ey+er], fill=(255, 255, 255))
-            d.ellipse([ex-er*0.5, ey-er*0.5, ex+er*0.5, ey+er*0.5], fill=(15, 40, 22))
+            d.ellipse([ex-er*0.5, ey-er*0.5, ex+er*0.5, ey+er*0.5], fill=(26, 22, 52))
         small = big.resize((W, H), Image.LANCZOS)
         frames.append(small.quantize(colors=64, method=Image.MEDIANCUT))
 
