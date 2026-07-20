@@ -13,8 +13,8 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else "snake.gif"
 GREEN = {0:"#ebedf0",1:"#9be9a8",2:"#40c463",3:"#30a14e",4:"#216e39"}
 GREY  = {0:"#ebedf0",1:"#c9ced4",2:"#aab0b8",3:"#848c96",4:"#5b636d"}
 COL2LVL = {"#ebedf0":0,"#9be9a8":1,"#40c463":2,"#30a14e":3,"#216e39":4}
-HEAD = (139, 92, 246)     # purple #8B5CF6
-TAIL = (47, 129, 247)     # blue   #2F81F7
+HEAD = (109, 40, 217)     # deep purple  #6D28D9
+TAIL = (167, 139, 250)    # light purple #A78BFA
 
 CELL, GAP, PAD, ROWS = 13, 3, 12, 7
 PITCH = CELL + GAP
