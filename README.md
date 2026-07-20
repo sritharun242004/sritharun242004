@@ -110,7 +110,7 @@
 <h2 align="center">📊 GitHub Stats</h2>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sritharun242004&hide_border=true&background=FFFFFF&stroke=E1E4E8&ring=2F81F7&fire=FF6B00&currStreakLabel=2F81F7&sideLabels=333333&dates=767676&currStreakNum=333333&sideNums=333333" alt="streak stats" />
+  <img src="https://streak-stats.demolab.com/?user=sritharun242004&hide_border=true&background=FFFFFF&stroke=E1E4E8&ring=2F81F7&fire=FF6B00&currStreakLabel=2F81F7&sideLabels=333333&dates=767676&currStreakNum=333333&sideNums=333333" alt="streak stats" />
 </div>
 
 <hr/>
