@@ -119,7 +119,7 @@
 <h2 align="center">🐍 Contribution Snake</h2>
 
 <div align="center">
-  <img alt="github-snake" src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/sritharun242004/sritharun242004/main/assets/snake.gif?v=10" width="880" />
 </div>
 
 <hr/>
